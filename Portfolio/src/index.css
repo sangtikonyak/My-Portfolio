@@ -190,7 +190,10 @@ div [class^="col-"]{
 }
 @media screen and (max-width: 430px){
   #name{
-   font-size: 10px;
+   font-size: 9px;
+  }
+  #intern { 
+    font-size: 0.5rem;
   }
   .nav-item span a{
     font-size: 10px;
@@ -199,9 +202,12 @@ div [class^="col-"]{
     padding: 0.5rem;
   }
   #lottie{
-    max-width: 70%;
+    max-width: 50%;
   }
   .intern{
-    font-size: 15px;
+    font-size: 14px;
+  }
+  .intern-list {
+    font-size: 12px;
   }
 }

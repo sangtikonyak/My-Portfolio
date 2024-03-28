@@ -20,7 +20,7 @@ const Home = () => {
       >
         <div className="row m-0">
           <div className="">
-            <div className="row p-sm-3 p-md-3 p-lg-3 d-flex justify-content-between align-items-center g-2">
+            <div className="row p-sm-3 p-md-3 p-lg-3 d-flex justify-content-center align-items-center g-2">
               <div
                 className=" text-black col-12 col-md-5 sm-px-1 md-px-5 ms-2 "
                 id="content"
@@ -73,13 +73,14 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="image-side col-10 col-md-5 order-first order-md-last">
+              <div className="image-side  col-10 col-md-5 order-first order-md-last">
                 <Lottie
                   animationData={animationData}
                   style={{
-                    maxWidth: "100%",
-                    height: "200px",
+                    maxWidth: "90%",
+                    height: "auto",
                     marginBottom: "50px",
+                    paddingLeft: "50px",
                   }}
                   id="lottie"
                 />

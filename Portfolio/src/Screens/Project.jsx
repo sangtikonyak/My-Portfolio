@@ -102,13 +102,14 @@ const Project = () => {
           </div>
           <div className="container my-4 p-4">
             <h6
-              className="px-4 fw-bold"
-              style={{ fontSize: "1.8rem", borderBottom: "1px solid silver" }}
+              className=" sm-px-1 md-px-4 fw-bold "
+              id="intern"
+              style={{ fontSize: "1.5rem", borderBottom: "1px solid silver" }}
             >
               INTERNSHIP HIGHLIGHTS
             </h6>
-            <div className="px-4">
-              <p className="fw-bold mt-3 intern" id="intern">
+            <div className="sm-px-1 md-px-4">
+              <p className="fw-bold mt-3 intern">
                 FULLSTACK SOFTWARE DEVELOPER INTERN
               </p>
               <p className="intern">Duration : 3 Months</p>
@@ -116,7 +117,7 @@ const Project = () => {
                 Organization SymBios Creations pvt limited
               </p>
             </div>
-            <ul class="mt-2" style={{ paddingLeft: "50px" }}>
+            <ul class="mt-2" style={{ paddingLeft: "40px" }}>
               <li className="intern-list">
                 Developed a notification module using C#, Entity Framework, and
                 ASP.NET Core for sending notifications to users based on events
