@@ -1,0 +1,205 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.side-div{
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.side-main{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.nav-item span a {
+  color: black;
+  text-decoration: none;
+}
+.img{
+  height:150px;
+  width:100%;
+  object-fit: cover;
+}
+
+div [class^="col-"]{
+  padding-left:5px;
+  padding-right:5px;
+}
+.card{
+  transition:0.5s;
+  cursor:pointer;
+}
+.card-title{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.card-text{
+  height:80px;  
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after{
+  transform: scale3d(1, 1, 1);
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.full-stack-developer-animation {
+  animation-name: slideFromTop;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+.icons {
+  animation-name: slideFromBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+.text-black {
+  animation-name: slideFromLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+.project-card{
+  position: absolute;
+  top: 180px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+         
+}
+.intern{
+  line-height: 15px;
+}
+
+.image-contiainer{
+  animation: fadein 2s ease-out;
+}
+.intern-list{
+  padding: 10px;
+  
+}
+@keyframes fadein{
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity:  3;
+  }
+  100% {
+    opacity: 5;
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(30%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes slide-in {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .side-div{
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width:600px){
+.side-div{
+  font-size: 8px;
+}
+.project-card{
+
+  top: 20%;
+}
+.side-div h3{
+  font-size: 10px;
+}
+}
+@media screen and (max-width:760px) {
+  .image-side{
+   display: inline-block;
+   width: 90%;
+   margin: auto;
+   padding-bottom: 50px;
+  }
+ 
+}
+@media screen and (max-width: 430px){
+  #name{
+   font-size: 10px;
+  }
+  .nav-item span a{
+    font-size: 10px;
+  }
+  #content{
+    padding: 0.5rem;
+  }
+  #lottie{
+    max-width: 70%;
+  }
+  .intern{
+    font-size: 15px;
+  }
+}
