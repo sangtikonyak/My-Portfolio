@@ -177,14 +177,16 @@ div [class^="col-"]{
   font-size: 10px;
 }
 }
-@media screen and (max-width:760px) {
+@media screen and (max-width:770px) {
   .image-side{
    display: inline-block;
    width: 90%;
    margin: auto;
    padding-bottom: 50px;
   }
- 
+ #lottie {
+  margin-bottom: 10px;
+ }
 }
 @media screen and (max-width: 430px){
   #name{

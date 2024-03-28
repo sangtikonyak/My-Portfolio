@@ -22,7 +22,7 @@ const Home = () => {
           <div className="">
             <div className="row p-sm-3 p-md-3 p-lg-3 d-flex justify-content-between align-items-center g-2">
               <div
-                className=" text-black col-10 col-md-5 px-5 ms-2 "
+                className=" text-black col-12 col-md-5 sm-px-1 md-px-5 ms-2 "
                 id="content"
               >
                 <h3 className="mb-4 fw-bold full-stack-developer-animation">
@@ -78,7 +78,7 @@ const Home = () => {
                   animationData={animationData}
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "200px",
                     marginBottom: "50px",
                   }}
                   id="lottie"

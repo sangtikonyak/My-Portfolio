@@ -39,6 +39,7 @@ const Project = () => {
                 flexDirection: "column",
                 justifyContent: "space-between",
                 padding: "10px",
+                overflow: "hidden",
               }}
             >
               <Link
@@ -57,9 +58,9 @@ const Project = () => {
                   className="img"
                 />
 
-                <p className="card-text mt-3 multiline-ellipsis text-muted">
+                <p className="card-text mt-3 text-muted">
                   The Myntra Clone homepage is a replica of the original Myntra
-                  website's homepage, featuring a...
+                  website's homepage, featuring ....
                 </p>
               </Link>
             </div>
@@ -74,6 +75,7 @@ const Project = () => {
                 flexDirection: "column",
                 justifyContent: "space-between",
                 padding: "10px",
+                overflow: "hidden",
               }}
             >
               <Link
@@ -91,17 +93,14 @@ const Project = () => {
                   style={{ objectFit: "contain" }}
                 />
 
-                <p
-                  className="card-text mt-3 text-muted"
-                  style={{ textOverflow: "ellipsis" }}
-                >
+                <p className="card-text mt-3 text-muted">
                   The Amazon Clone is a replica of the Amazon APP, offering a
                   similar layout and functionality.
                 </p>
               </Link>
             </div>
           </div>
-          <div className="container my-5 p-4">
+          <div className="container my-4 p-4">
             <h6
               className="px-4 fw-bold"
               style={{ fontSize: "1.8rem", borderBottom: "1px solid silver" }}
@@ -109,7 +108,7 @@ const Project = () => {
               INTERNSHIP HIGHLIGHTS
             </h6>
             <div className="px-4">
-              <p className="fw-bold intern" id="intern">
+              <p className="fw-bold mt-3 intern" id="intern">
                 FULLSTACK SOFTWARE DEVELOPER INTERN
               </p>
               <p className="intern">Duration : 3 Months</p>
