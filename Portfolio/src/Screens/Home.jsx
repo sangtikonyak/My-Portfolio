@@ -33,7 +33,7 @@ const Home = () => {
                 </h3>
                 <ul className="list-unstyled lh-sm text-spacing-1">
                   <li>
-                    <strong style={{ fontSize: "12px" }}>
+                    <strong style={{ fontSize: "1rem" }}>
                       Results-driven Software Developer with a passion for
                       continuous learning. Skilled in Java, SpringBoot, HTML,
                       CSS, JavaScript, Bootstrap, Angular, MySQL, MongoDB, and
@@ -79,7 +79,7 @@ const Home = () => {
                   style={{
                     maxWidth: "90%",
                     height: "auto",
-                    marginBottom: "50px",
+
                     paddingLeft: "50px",
                   }}
                   id="lottie"

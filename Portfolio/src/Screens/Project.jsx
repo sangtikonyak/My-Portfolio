@@ -117,34 +117,81 @@ const Project = () => {
                 Organization SymBios Creations pvt limited
               </p>
             </div>
-            <ul class="mt-2" style={{ paddingLeft: "40px" }}>
-              <li className="intern-list">
-                Developed a notification module using C#, Entity Framework, and
-                ASP.NET Core for sending notifications to users based on events
-                or triggers.
-              </li>
-              <li className="intern-list">
-                Created APIs for apps to interact with the server or database,
-                enabling features such as data retrieval and user
-                authentication.
-              </li>
-              <li className="intern-list">
-                Managed existing websites, including maintaining functionality,
-                updating content, and ensuring security and performance.
-              </li>
-              <li className="intern-list">
-                Added important features to projects, enhancing user interfaces,
-                functionality, and codebase efficiency.
-              </li>
-              <li className="intern-list">
-                Applied strong time management skills to prioritize tasks and
-                meet project deadlines.
-              </li>
-              <li className="intern-list">
-                Participated in meetings to discuss project requirements,
-                progress, and strategies for implementation.
-              </li>
-            </ul>
+            <div className="mt-5">
+              <h5
+                className="fw-bold"
+                style={{ borderBottom: "1px solid silver" }}
+              >
+                KEY HIGHLIGHTS
+              </h5>
+              <ul class="mt-2" style={{ paddingLeft: "40px" }}>
+                <li className="intern-list">
+                  Created APIs for apps to interact with the server or database,
+                  enabling features such as data retrieval and user
+                  authentication.
+                </li>
+                <li className="intern-list">
+                  Managed existing websites, including maintaining
+                  functionality, updating content, and ensuring security and
+                  performance.
+                </li>
+                <li className="intern-list">
+                  Added important features to projects, enhancing user
+                  interfaces, functionality, and codebase efficiency.
+                </li>
+                <li className="intern-list">
+                  Applied strong time management skills to prioritize tasks and
+                  meet project deadlines.
+                </li>
+                <li className="intern-list">
+                  Participated in meetings to discuss project requirements,
+                  progress, and strategies for implementation.
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-5">
+              <h5 className=" fw-bold">Notification Module Devlopment</h5>
+              <h6
+                className="fw-bold"
+                style={{ borderBottom: "1px solid silver" }}
+              >
+                Description
+              </h6>
+              <p>
+                Developed a notification module using ASP.NET Core 6 MVC to send
+                bulk messages using the Wati API. Integrated the API to enable
+                efficient and personalized messaging to a large number of
+                recipients. Implemented message templating and error handling
+                logic to ensure reliability and effectiveness. Created a user
+                interface for managing bulk messages, including scheduling and
+                status tracking.
+              </p>
+              <h6
+                className="fw-bold"
+                style={{ borderBottom: "1px solid silver" }}
+              >
+                Highlights
+              </h6>
+              <ul>
+                <li className="intern-list">
+                  Developed notification module for bulk messaging, showcasing
+                  ASP.NET Core 6 MVC skills.
+                </li>
+                <li className="intern-list">
+                  Integrated Wati API for efficient and personalized messaging
+                  to a large audience.
+                </li>
+                <li className="intern-list">
+                  Implemented message templating and error handling for reliable
+                  message delivery.
+                </li>
+                <li className="intern-list">
+                  Created user interface for managing messages, tracking
+                  features.
+                </li>
+              </ul>
+            </div>
           </div>
           <div
             className="container mt-5 p-5"

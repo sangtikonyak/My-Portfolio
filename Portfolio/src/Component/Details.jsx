@@ -14,7 +14,6 @@ const Details = () => {
 
   return (
     <div className="container">
-      <h4 className="text-center fw-bold mb-4">{project?.title}</h4>
       <div
         className="image-container d-flex justify-content-center align-items-center"
         style={{ width: "100%" }}
@@ -36,6 +35,9 @@ const Details = () => {
         }}
       >
         <div className="col-12">
+          <h6 className="fw-bold mb-3" style={{ fontSize: "1.2rem" }}>
+            Title : <span>{project?.title}</span>
+          </h6>
           <h6 className="fw-bold" style={{ borderBottom: "1px solid silver" }}>
             Description
           </h6>
@@ -58,7 +60,6 @@ const Details = () => {
             Technologies and Framework Used
           </h6>
           <p>{project?.technologies}</p>
-
           <h6
             className="fw-bold mt-4"
             style={{ borderBottom: "1px solid silver" }}
