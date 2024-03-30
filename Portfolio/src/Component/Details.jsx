@@ -15,7 +15,7 @@ const Details = () => {
   const imageUrl = "/carousel/" + project?.image;
 
   return (
-    <div className="container">
+    <div className="container" style={{ height: "100vh", margin: "50px 0" }}>
       <div
         className="image-container d-flex justify-content-center align-items-center"
         style={{ width: "100%" }}
