@@ -107,9 +107,6 @@ div [class^="col-"]{
 .image-contiainer{
   animation: fadein 2s ease-out;
 }
-ul li{
-  font-size: 1.3rem;
-}
 .intern-list{
   padding: 10px;
   font-size: 1.2rem;
@@ -211,9 +208,7 @@ ul li{
   #intern { 
     font-size: 0.5rem;
   }
-  .nav-item span a{
-    font-size: 10px;
-  }
+
   #content{
     padding: 0.5rem;
   }

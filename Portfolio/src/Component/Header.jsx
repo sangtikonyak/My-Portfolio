@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <nav
       className="navbar navbar-expand-lg navbar fw-bold"
-      style={{ backgroundColor: "rgba(248, 242, 255, 0.5);" }}
+      style={{ backgroundColor: "rgba(248, 242, 255, 0.5)" }}
     >
       <div className="container-fluid">
         <ul
@@ -22,7 +22,11 @@ const Header = () => {
           </li>
           <li className="nav-item px-3 ">
             <span>
-              <Link to="/project" className="nav-link ">
+              <Link
+                to="/project"
+                className="nav-link "
+                onClick={() => console.log("clicked")}
+              >
                 Project
               </Link>
             </span>
