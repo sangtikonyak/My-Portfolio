@@ -200,6 +200,9 @@ div [class^="col-"]{
     font-size: 16px; 
   }
   
+  .nav-item span a{
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 430px){
   #name{

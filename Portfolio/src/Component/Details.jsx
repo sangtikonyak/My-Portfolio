@@ -50,7 +50,9 @@ const Details = () => {
           </h6>
           <ul>
             {project?.functionalities.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index} style={{ fontSize: "1.3rem" }}>
+                {item}
+              </li>
             ))}
           </ul>
           <h6
