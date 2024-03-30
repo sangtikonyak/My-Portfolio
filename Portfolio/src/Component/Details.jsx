@@ -1,15 +1,17 @@
 import React, { useContext, useEffect, useState } from "react";
 import { ProductContext } from "../../ProjectContext";
+import { useParams } from "react-router-dom";
 
 const Details = () => {
   const { state } = useContext(ProductContext);
-  const [project, setProject] = useState(state);
+  const [project, setProject] = useState(null);
+  const { id } = useParams();
 
   useEffect(() => {
-    setProject(state);
-  }, [state]);
+    const project = state.find((p) => p.id === id);
+    setProject(project);
+  }, [id]);
 
-  console.log(project.functionalities);
   const imageUrl = "/carousel/" + project?.image;
 
   return (

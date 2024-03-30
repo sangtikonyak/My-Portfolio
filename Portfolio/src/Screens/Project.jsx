@@ -1,15 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { PROJECTS } from "../../Projects";
-import { ProductContext } from "../../ProjectContext";
 
 const Project = () => {
-  const [
-    { movieTrailerApp, myntraClone, amazonClone, randomQuote, textToSpeech },
-  ] = PROJECTS;
-
-  const { addProduct } = useContext(ProductContext);
-
   return (
     <div
       className="container-fluid"
@@ -42,13 +34,7 @@ const Project = () => {
                 overflow: "hidden",
               }}
             >
-              <Link
-                to="/details"
-                style={{ textDecoration: "none" }}
-                onClick={() => {
-                  addProduct(myntraClone);
-                }}
-              >
+              <Link to="/details/2" style={{ textDecoration: "none" }}>
                 <h4 className="card-title text-center text-black fw-bold">
                   Myntra Clone
                 </h4>
@@ -78,11 +64,7 @@ const Project = () => {
                 overflow: "hidden",
               }}
             >
-              <Link
-                to="/details"
-                onClick={() => addProduct(amazonClone)}
-                className="text-decoration-none"
-              >
+              <Link to="/details/3" className="text-decoration-none">
                 <h4 className="card-title fw-bold text-center text-black">
                   Amazon Clone
                 </h4>
@@ -199,11 +181,7 @@ const Project = () => {
           >
             <div className="row justify-content-between align-items-center">
               <div className="col-12 col-md-5 order-first order-md-last">
-                <Link
-                  to="/details"
-                  onClick={() => addProduct(movieTrailerApp)}
-                  className="text-decoration-none"
-                >
+                <Link to="/details/1" className="text-decoration-none">
                   <img
                     src="\carousel\movieTrailerApp.png"
                     alt="Photo of sunset"
@@ -220,7 +198,7 @@ const Project = () => {
                 >
                   MOVIE TRAILER APP
                 </h6>
-                <p className="">
+                <p>
                   The Movie Trailer App aims to provide a friendly and seamless
                   experience to users, transforming the movie-watching
                   experience by offering a personalized approach.......
@@ -228,8 +206,7 @@ const Project = () => {
                 <div className="button d-flex justify-content-center">
                   <button className="btn btn-primary btn-sm">
                     <Link
-                      to="/details"
-                      onClick={() => addProduct(movieTrailerApp)}
+                      to="/details/1"
                       className="text-decoration-none text-white"
                     >
                       View Details
@@ -248,7 +225,7 @@ const Project = () => {
           >
             <div className="row justify-content-between align-items-center">
               <div className="col-12 col-md-5">
-                <Link to="/details" onClick={() => addProduct(textToSpeech)}>
+                <Link to="/details/5">
                   <img
                     src="\carousel\txtToSpeech.png"
                     alt="Photo of sunset"
@@ -264,16 +241,14 @@ const Project = () => {
                 >
                   TEXT TO SPEECH CONVERTER
                 </h6>
-                <p className="">
-                  The Movie Trailer App aims to provide a friendly and seamless
-                  experience to users, transforming the movie-watching
-                  experience by offering a personalized approach.......
+                <p>
+                  The Text-to-Speech (TTS) application using JavaScript is a
+                  tool that converts written text into spoken words.
                 </p>
                 <div className="button d-flex justify-content-center ">
                   <button className="btn btn-primary btn-sm">
                     <Link
-                      to="/details"
-                      onClick={() => addProduct(textToSpeech)}
+                      to="/details/5"
                       className="text-decoration-none text-white"
                     >
                       View Details
@@ -299,15 +274,13 @@ const Project = () => {
                   RANDOM QUOTE GENERATOR
                 </h6>
                 <p className="">
-                  The Movie Trailer App aims to provide a friendly and seamless
-                  experience to users, transforming the movie-watching
-                  experience by offering a personalized approach.......
+                  The Random Quote Generator is a web application that uses an
+                  API to fetch and display random quotes.
                 </p>
                 <div className="button d-flex justify-content-center">
                   <button className="btn btn-primary btn-sm">
                     <Link
-                      to="/details"
-                      onClick={() => addProduct(randomQuote)}
+                      to="/details/4"
                       className="text-decoration-none text-white"
                     >
                       View Details
@@ -316,7 +289,7 @@ const Project = () => {
                 </div>
               </div>
               <div className="col-12 col-md-5 order-first order-md-last">
-                <Link to="/details" onClick={() => addProduct(randomQuote)}>
+                <Link to="/details/4">
                   <img
                     src="\carousel\quote.png"
                     alt="Photo of sunset"
