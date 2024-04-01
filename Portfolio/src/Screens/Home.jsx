@@ -39,7 +39,7 @@ const Home = () => {
                       CSS, JavaScript, Bootstrap, Angular, MySQL, MongoDB, and
                       Git. Experienced in creating innovative applications like
                       MovieTrailerApp. Adept at problem-solving and teamwork.
-                      Completed a 3-month internship and developed a
+                      Completed a 4-month internship and developed a
                       notification module using C#, Entity Framework, and
                       ASP.NET Core. Familiar with React.js and React Native.
                     </strong>{" "}
